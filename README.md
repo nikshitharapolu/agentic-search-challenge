@@ -21,7 +21,7 @@ It basically has two modes- local and main. Local mode is designed for developme
 - httpx / requests: HTTP clients for Brave search and page fetching; httpx used in async contexts.
 
 
-#Project Structure:
+## Project Structure:
 
 
 ```text
@@ -47,7 +47,7 @@ agentic-search-challenge/
 
 
 
-#Instructions to run
+## Instructions to run
 
 
 1. Clone the repo and install the requirements using
@@ -130,7 +130,7 @@ The response typically looks like this:
 
 
 
-#Behavior and Approach
+## Behavior and Approach
 
 
 End-to-end flow
@@ -194,7 +194,7 @@ Orchestrates the steps above, builds a QueryResponse, and returns it through /se
 This is not a full knowledge base, but it is accurate enough to support quick research or as a first step before deeper human review. The provenance fields (URL, title, short evidence snippet, and confidence) make it easy to manually verify any entity and attribute.
 
 
-#Latency and cost
+## Latency and cost
 
 
 Each query triggers:
@@ -209,7 +209,7 @@ Up to MAX_PAGES OpenAI calls.
 With MAX_PAGES=2–3, latency is a few seconds per query and affordable under typical gpt-4o-mini; this is acceptable for user‑facing tools or dashboards, and can be further tuned.
 
 
-#Design choices
+## Design choices
 
 
 1. Search provider choice
@@ -230,7 +230,7 @@ Full scraping frameworks add complexity and often fail on modern web anti‑bot 
 LLM outputs are free‑form, but the pipeline needs stable structured entities. So Pydantic schemas are used for LLMEntity and LLMExtraction, and JSON parsing logic that handles markdown fences (```json) and guards against parse errors with fallbacks.
 
 
-#Limitations
+## Limitations
 
 
 - Rate limits: OpenAI and Brave both have rate limits; MAX_PAGES should be kept modest on low‑tier accounts. Rate limit errors are captured in notes.
@@ -246,7 +246,7 @@ LLM outputs are free‑form, but the pipeline needs stable structured entities. 
 
 
 
-#Conclusion
+## Conclusion
 
 
 This project implements a multi‑step agentic pipeline (search → retrieval → LLM extraction → dedupe → provenance) instead of just prompting an LLM with a single search result. 
@@ -255,7 +255,7 @@ This project implements a multi‑step agentic pipeline (search → retrieval �
 It provides a clean programmatic API (/search) for integration and a UI suitable for non‑technical users or quick evaluations.
 
 
-#Future work 
+## Future work 
 
 
 - Adding more search APIs (SerpAPI, Tavily, OpenRouter search tools). 
