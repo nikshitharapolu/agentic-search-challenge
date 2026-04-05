@@ -7,7 +7,7 @@ This project is an agentic web search system that uses web search APIs to find r
 It basically has two modes- local and main. Local mode is designed for development stage and testing purposes at a smaller range initially. The main mode uses Brave Search API and OpenAI for high quality results and real-world behaviour.
 
 
-#Tech Stack
+## Tech Stack
 
 
 - FastAPI: It is a modern async python web framework with automatice OpenAPI docs at /docs.
