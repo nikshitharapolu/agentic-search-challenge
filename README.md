@@ -1,4 +1,4 @@
-#Agentic Search
+# Agentic Search
 
 
 This project is an agentic web search system that uses web search APIs to find relevant pages. It fetches and parses those pages into text and calls an LLM to extract structured entities. It also deduplicates entities across pages and attaches provenance (source URLs, evidences, etc.) and exposes everything via a FastAPI backend and Streamlit UI.
