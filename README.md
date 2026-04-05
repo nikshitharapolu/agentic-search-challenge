@@ -266,13 +266,8 @@ It provides a clean programmatic API (/search) for integration and a UI suitable
 
 - Experimenting with richer entity schemas (events, relationships) or more powerful models.
 
-## Sample Outputs
 
-<img width="912" height="1080" alt="image" src="https://github.com/user-attachments/assets/aafae1f8-b6d3-4559-abe3-29a0aa2c3b55" />
 
-<img width="901" height="1080" alt="image" src="https://github.com/user-attachments/assets/d818ca57-09c9-4e51-bb9b-81b0f3f7276f" />
-
-<img width="871" height="1080" alt="image" src="https://github.com/user-attachments/assets/32bdbca9-7ae1-46ff-bed4-ad5fd82a776b" />
 
 
 
