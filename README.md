@@ -33,13 +33,13 @@ agentic-search-challenge/
     search.py         # DuckDuckGo + Brave search clients
     fetch.py          # Async page fetcher returning {url, text}
     extract.py        # Ollama + OpenAI clients and extraction logic
-    pipeline.py       # End-to-end orchestration (search → fetch → extract → dedupe)
+    pipeline.py       # End-to-end flow (search → fetch → extract → dedupe)
     schemas.py        # Pydantic models: QueryResponse, EntityRow, Evidence, LLMEntity
     utils.py          # dedupe_entities and helper utilities
   ui/
-    app.py            # Streamlit UI (optional)
+    app.py            # Streamlit UI
   tests/
-    test_pipeline.py  # Example unit test for dedupe_entities
+    test_pipeline.py  # Unit test for dedupe_entities
   .env.example        # Example config
   requirements.txt
   README.md
